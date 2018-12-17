@@ -1,4 +1,14 @@
+#include"stdafx.h"
+#include <opencv2/highgui/highgui.hpp>  
+#include <opencv2/imgproc/imgproc.hpp>  
+#include <opencv2/core/core.hpp>  
+//#include<string>
+//#include<iostream>
+ 
+using namespace cv;
 
+int main()
+{   
     VideoCapture cap(0);
     Mat frame;
     char key;
@@ -25,3 +35,4 @@
          }
    waitKey(0);
    return 0;
+}
